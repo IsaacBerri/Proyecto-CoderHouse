@@ -458,13 +458,24 @@ section ul {
   box-shadow: 3px 3px 2px 0px rgb(212, 0, 255);
 }
 
-.bottom {
+.bottom{
   position: relative;
-  top: 90px;
-  left: 20px;
+  top: 38%;
+  left: 20%;
   margin: 10px;
   height: 30px;
+  cursor: pointer;
+  transition: height 0.5s;
+  }
+
+.bottom:hover{
+  transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
+.bottom:active{
+  transform:translateY(3px);
+}
+
 
 .container-bottom {
   position: fixed;
