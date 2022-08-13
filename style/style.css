@@ -1,0 +1,893 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.gridPadre {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.gridJuegos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.gridGaleria {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.gridUbicacion {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.gridContacto {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.tituloPrincipal {
+  background-color: bisque;
+  color: white;
+  font-size: 20px;
+  /* text-align: center; */
+  grid-area: tituloPrincipal;
+  height: 170px;
+
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+}
+
+.menu {
+  background-color: black;
+
+  /* text-align: center; */
+  grid-area: menu;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.menu nav ul li {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+  text-shadow: 2px 2px 2px #ff00ec;
+}
+
+.menu nav ul li a {
+  color: white;
+}
+
+.contenido {
+  background: linear-gradient(to bottom, #8b00ff, #ff00ec);
+  grid-area: contenido;
+  height: 90%;
+  padding: 15px;
+  margin-top: 30px;
+  /* border-radius: 10px; */
+  /* border: 3px black solid; */
+}
+
+.contenido p {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+
+.contenido h2 {
+  text-align: center;
+}
+
+.reglas {
+  grid-area: reglas;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.reglas h2 {
+  padding: 20px;
+}
+
+aside {
+  background-color: antiquewhite;
+  background-image: url(../img/razer.png);
+  background-position: center;
+  background-size: cover;
+  grid-area: aside;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside p {
+  padding-top: 5px;
+}
+
+.reglaUno {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border-bottom: 3px black solid;
+  border-right: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+.reglaDos {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border-bottom: 3px black solid;
+  border-right: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+.reglaTres {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border-bottom: 3px black solid;
+  border-right: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+
+.gamasPc {
+  grid-area: gamasPc;
+  text-align: center;
+  margin-top: 40px;
+  /* margin-bottom: 20px; */
+}
+
+.pcBaja {
+  height: 150px;
+  width: 270px;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+  grid-area: pcBaja;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pcMedia {
+  height: 150px;
+  width: 270px;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+  grid-area: pcMedia;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pcAlta {
+  height: 150px;
+  width: 270px;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+  grid-area: pcAlta;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section ul {
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  grid-area: footer;
+  height: 340px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.footer h3 {
+  text-shadow: 2px 2px 2px #ff00ec;
+}
+
+.isaacWeb {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-areas:
+    "tituloPrincipal tituloPrincipal tituloPrincipal"
+    "menu menu menu"
+    "reglas reglas reglas"
+    "aside aside aside"
+    "contenido contenido contenido"
+    "contenido contenido contenido"
+    "gamasPc gamasPc gamasPc"
+    "pcBaja pcMedia pcAlta"
+    "footer footer footer";
+}
+
+.imagenJuegos {
+  background-color: aqua;
+  height: 600px;
+  background-image: url(../img/JUEGOS-2.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: imagenJuegos;
+}
+
+.listasJuegos {
+  height: 40px;
+  grid-area: listasJuegos;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.juegosCompetitivos {
+  background: linear-gradient(to right, #8b00ff, #ff00ec);
+  height: 410px;
+  grid-area: juegosCompetitivos;
+  text-align: center;
+  line-height: 25px;
+}
+
+.juegosNormales {
+  background: linear-gradient(to left, #8b00ff, #ff00ec);
+  height: 410px;
+  grid-area: juegosNormales;
+  text-align: center;
+  line-height: 25px;
+}
+
+.precios {
+  height: 40px;
+  grid-area: precios;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.precioBajo {
+  height: 270px;
+  grid-area: precioBajo;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+
+.precioMedio {
+  height: 270px;
+  grid-area: precioMedio;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+
+.precioAlto {
+  height: 270px;
+  grid-area: precioAlto;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+
+.baja {
+  height: 120px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridJuegos {
+  display: grid;
+  grid-template-areas:
+    "tituloPrincipal tituloPrincipal tituloPrincipal"
+    "menu menu menu"
+    "imagenJuegos imagenJuegos imagenJuegos"
+    "listasJuegos listasJuegos listasJuegos"
+    "juegosCompetitivos juegosNormales juegosNormales"
+    "precios precios precios"
+    "tiposDePrecios tiposDePrecios tiposDePrecios"
+    "footer footer footer";
+}
+
+.nuestasInstalaciones {
+  height: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  grid-area: nuestasInstalaciones;
+}
+
+.instalaciones {
+  height: 600px;
+  background-color: #ff00ec;
+  grid-area: instalaciones;
+  background-image: url(../img/Instalaciones.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.imgGamaBaja {
+  height: 300px;
+  width: 300px;
+  grid-area: imgGamaBaja;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+.imgGamaMedia {
+  height: 300px;
+  width: 300px;
+  grid-area: imgGamaMedia;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+.imgGamaAlta {
+  height: 300px;
+  width: 300px;
+  grid-area: imgGamaAlta;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+}
+
+.visitanos {
+  height: 60px;
+  text-align: center;
+  grid-area: visitanos;
+  margin-top: 20px;
+}
+
+.mapa {
+  background-color: aqua;
+  grid-area: mapa;
+  border: 5px black solid;
+  border-radius: 100px;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+  margin-top: 30px;
+}
+
+.indicaciones {
+  height: 100px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  grid-area: indicaciones;
+}
+
+.tituloContacto {
+  height: 30px;
+  padding: 10px;
+  background-color: #ff00ec;
+  text-align: center;
+  grid-area: tituloContacto;
+}
+
+.formulario {
+  height: 500px;
+  width: 350px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
+  grid-area: formulario;
+}
+
+.confiInput {
+  margin: 20px;
+  height: 20px;
+  width: 50%;
+}
+
+.nombre input {
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 3px 3px 2px 0px rgb(212, 0, 255);
+}
+
+.apellido input {
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 3px 3px 2px 0px rgb(212, 0, 255);
+}
+
+.correo input {
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 3px 3px 2px 0px rgb(212, 0, 255);
+}
+
+.edad input {
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 3px 3px 2px 0px rgb(212, 0, 255);
+}
+
+.idea textarea {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 3px black solid;
+  box-shadow: 3px 3px 2px 0px rgb(212, 0, 255);
+}
+
+.bottom {
+  position: relative;
+  top: 90px;
+  left: 20px;
+  margin: 10px;
+  height: 30px;
+}
+
+.container-bottom {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+/*********Inicio de Responsive index.html*************/
+@media (min-width: 375px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "reglas reglas"
+      "aside aside"
+      "contenido contenido"
+      "gamasPc gamasPc"
+      "pcBaja pcBaja"
+      "pcMedia pcMedia"
+      "pcAlta pcAlta"
+      "footer footer";
+  }
+  .pcBaja {
+    margin-left: 27%;
+  }
+
+  .pcMedia {
+    margin-left: 27%;
+  }
+
+  .pcAlta {
+    margin-left: 27%;
+  }
+}
+
+@media (min-width: 768px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "reglas reglas"
+      "aside aside"
+      "contenido contenido"
+      "gamasPc gamasPc"
+      "pcBaja pcMedia"
+      "pcAlta pcAlta"
+      "footer footer";
+  }
+  .pcBaja {
+    margin-left: 15%;
+  }
+
+  .pcMedia {
+    margin-left: 15%;
+  }
+
+  .pcAlta {
+    margin-left: 33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal tituloPrincipal"
+      "menu menu menu"
+      "reglas reglas reglas"
+      "aside aside aside"
+      "contenido contenido contenido"
+      "contenido contenido contenido"
+      "gamasPc gamasPc gamasPc"
+      "pcBaja pcMedia pcAlta"
+      "footer footer footer";
+
+    /* gap: 10px; */
+  }
+
+  .pcBaja {
+    margin-left: 20%;
+  }
+
+  .pcMedia {
+    margin-left: 20%;
+  }
+
+  .pcAlta {
+    margin-left: 20%;
+    margin-right: 40px;
+  }
+}
+/* ********Final del Responsive indes.html********* */
+
+/* *******Inico del Responsive juegosylistadeprecios.hyml********* */
+@media (min-width: 375px) {
+  .gridJuegos {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "imagenJuegos imagenJuegos"
+      "listasJuegos listasJuegos"
+      "juegosCompetitivos juegosCompetitivos"
+      "juegosNormales juegosNormales"
+      "precios precios"
+      "precioBajo precioBajo"
+      "precioMedio precioMedio"
+      "precioAlto precioAlto"
+      "footer footer";
+  }
+
+  .juegosCompetitivos {
+    background: linear-gradient(to bottom, #8b00ff, #ff00ec);
+  }
+
+  .juegosNormales {
+    background: linear-gradient(to top, #8b00ff, #ff00ec);
+  }
+
+  .precioBajo {
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .precioMedio {
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .precioAlto {
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .gridJuegos {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal tituloPrincipal"
+      "menu menu menu"
+      "imagenJuegos imagenJuegos imagenJuegos"
+      "listasJuegos listasJuegos listaJuegos"
+      "juegosCompetitivos juegosNormales juegosNormales"
+      "precios precios precios"
+      "precioBajo precioMedio precioAlto"
+      "footer footer footer";
+  }
+
+  .juegosCompetitivos {
+    background: linear-gradient(to right, #8b00ff, #ff00ec);
+  }
+
+  .juegosNormales {
+    background: linear-gradient(to left, #8b00ff, #ff00ec);
+  }
+
+  .precioBajo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 15%;
+  }
+
+  .precioMedio {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 15%;
+  }
+
+  .precioAlto {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridJuegos {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal tituloPrincipal"
+      "menu menu menu"
+      "imagenJuegos imagenJuegos imagenJuegos"
+      "listasJuegos listasJuegos listasJuegos"
+      "juegosCompetitivos juegosNormales juegosNormales"
+      "precios precios precios"
+      "precioBajo precioMedio precioAlto"
+      "footer footer footer";
+  }
+
+  .juegosCompetitivos {
+    background: linear-gradient(to right, #8b00ff, #ff00ec);
+  }
+
+  .juegosNormales {
+    background: linear-gradient(to left, #8b00ff, #ff00ec);
+  }
+
+  .precioBajo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+  }
+
+  .precioMedio {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+  }
+
+  .precioAlto {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40%;
+  }
+}
+/* *******Final del Responsive juegosylistadeprecios.hyml********* */
+
+/* ******Inicio del Responsive galeria.html******** */
+@media (min-width: 375px) {
+  .gridGaleria {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "nuestasInstalaciones nuestasInstalaciones"
+      "instalaciones instalaciones"
+      "imgGamaBaja imgGamaBaja"
+      "imgGamaMedia imgGamaMedia"
+      "imgGamaAlta imgGamaAlta"
+      "footer footer";
+  }
+
+  .imgGamaBaja {
+    margin-left: 10%;
+  }
+
+  .imgGamaMedia {
+    margin-left: 10%;
+  }
+
+  .imgGamaAlta {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 600px) {
+  .gridGaleria {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "nuestasInstalaciones nuestasInstalaciones"
+      "instalaciones instalaciones"
+      "imgGamaBaja imgGamaMedia"
+      "imgGamaAlta imgGamaAlta"
+      "footer footer";
+  }
+
+  .imgGamaMedia {
+    margin-left: 20%;
+  }
+
+  .imgGamaAlta {
+    margin-left: 33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridGaleria {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal tituloPrincipal"
+      "menu menu menu"
+      "nuestasInstalaciones nuestasInstalaciones nuestasInstalaciones"
+      "instalaciones instalaciones instalaciones"
+      "imgGamaBaja imgGamaMedia imgGamaAlta"
+      "footer footer footer";
+  }
+
+  .imgGamaMedia {
+    margin-left: 20%;
+  }
+
+  .imgGamaAlta {
+    margin-left: 23%;
+  }
+}
+/* ******Final del Responsive galeria.html******** */
+
+/* ******Final del Responsive galeria.html******** */
+
+/* **********Final del Responsive ubicanos.hyml************ */
+@media (min-width: 375px) {
+  .gridUbicacion {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "visitanos visitanos"
+      "mapa mapa"
+      "indicaciones indicaciones"
+      "footer footer";
+  }
+
+  .indicaciones {
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gridUbicacion {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "visitanos visitanos"
+      "mapa mapa"
+      "indicaciones indicaciones"
+      "footer footer";
+  }
+
+  .mapa {
+    margin-left: 15%;
+  }
+
+  .indicaciones {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridUbicacion {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal tituloPrincipal"
+      "menu menu menu"
+      "visitanos visitanos visitanos"
+      "mapa mapa mapa"
+      "indicaciones indicaciones indicaciones"
+      "footer footer footer";
+  }
+
+  .mapa {
+    margin-left: 60%;
+  }
+
+  .indicaciones {
+    margin-bottom: 35px;
+  }
+}
+/* **********Final del Responsive ubicanos.hyml************ */
+
+/* ******Inicio del Responsive contacto.html******* */
+@media (min-width: 375px) {
+  .gridContacto {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "tituloContacto tituloContacto"
+      "formulario formulario"
+      "footer footer";
+  }
+
+  .tituloContacto {
+    height: 70px;
+  }
+
+  .formulario {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .gridContacto {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal"
+      "menu menu"
+      "tituloContacto tituloContacto"
+      "formulario formulario"
+      "footer footer";
+  }
+
+  .tituloContacto {
+    height: 40px;
+  }
+
+  .formulario {
+    margin-left: 28%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gridContacto {
+    display: grid;
+    grid-template-areas:
+      "tituloPrincipal tituloPrincipal tituloPrincipal"
+      "menu menu menu"
+      "tituloContacto tituloContacto tituloContacto"
+      "formulario formulario formulario"
+      "footer footer footer";
+  }
+
+  .tituloContacto {
+    height: 40px;
+  }
+
+  .formulario {
+    margin-left: 37%;
+  }
+}
+/* ********Final del Responsive contacto.html******** */
