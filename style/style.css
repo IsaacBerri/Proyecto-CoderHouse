@@ -56,12 +56,16 @@
   display: inline-block;
   text-align: center;
   font-size: 20px;
-  padding: 7px;
+  padding: 20px;
   text-shadow: 2px 2px 2px #ff00ec;
 }
 
 .menu nav ul li a {
   color: white;
+}
+
+.menu nav ul li:hover{
+  background: #8b00ff;
 }
 
 .contenido {
@@ -367,6 +371,12 @@ section ul {
   box-shadow: 10px 10px 8px 0px rgb(212, 0, 255);
 }
 
+.zoom:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
 .visitanos {
   height: 60px;
   text-align: center;
@@ -400,7 +410,7 @@ section ul {
 }
 
 .formulario {
-  height: 500px;
+  height: 550px;
   width: 350px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -460,10 +470,17 @@ section ul {
 
 .bottom{
   position: relative;
-  top: 38%;
-  left: 20%;
-  margin: 10px;
-  height: 30px;
+  top: 34%;
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 3px black solid;
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right top,  #8b00ff, #ff00ec);
+ 
   cursor: pointer;
   transition: height 0.5s;
   }
