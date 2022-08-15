@@ -65,10 +65,6 @@
   color: white;
 }
 
-.menu nav ul li:hover{
-  background: #8b00ff;
-}
-
 .contenido {
   background: linear-gradient(to bottom, #8b00ff, #ff00ec);
   grid-area: contenido;
