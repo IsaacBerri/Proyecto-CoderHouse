@@ -459,6 +459,7 @@ section ul {
 }
 
 .idea textarea {
+  resize: none;
   height: 200px;
   width: 200px;
   border-radius: 10px;
